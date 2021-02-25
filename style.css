@@ -1,0 +1,38 @@
+.bg-light {
+    background-color: black !important;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, .3);
+}
+/* changement de couleur de la barre de menu*/
+/*ombre*/
+
+.navbar-light .navbar-nav .nav-link {
+    color: #ecf0f1;
+}
+/*Chnagement de couleur de la police des rubriques*/
+
+.navbar-light .navbar-nav .nav-link:hover, .nav-link:focus {
+    color: #ecf0f1;
+    border-bottom: 2px solid white;
+    padding-bottom: 1px
+}
+/* Pour éviter beug de couleur quand on selectionne une rubrique*/
+/*bordure*/
+
+body
+{
+background-image: url("https://cdn.discordapp.com/attachments/759714749742579732/814205185626341416/final.jpg");
+}
+/*fond*/
+
+
+@font-face {
+    font-family: "Pixel Powerline";
+    src: url("/Font/Pixel Powerline") format("truetype"),
+   }
+
+p{
+    font-size: 20px;
+    font-family: "Pixel Powerline";
+}
+
+
