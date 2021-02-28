@@ -9,11 +9,7 @@
 }
 /*Chnagement de couleur de la police des rubriques*/
 
-body
-{
-background-image: url("https://cdn.discordapp.com/attachments/732762091596939264/814449772110151720/Fong_gris.png");
-}
-/*fond*/
+
 
 .navbar-light .navbar-nav .nav-link:hover, .nav-link:focus {
     color: #ecf0f1;
