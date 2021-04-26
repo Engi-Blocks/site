@@ -1,63 +1,211 @@
-<!doctype html>
-<!doctype html>
+<!DOCTYPE html">
 <html lang="fr">
   <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8" />
+    <title>Création d'un design étape par étape - Etape n°1 : Le code xhtml</title>
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="stylesheet" href="style1.css" 
-    <title></title>
-    <link rel="icon" href="https://cdn.discordapp.com/attachments/732762091596939264/814188820143931402/logo_projet_S2_blanc_onglet.png" />                                                  
+<style type="text/css">
+html pre
+{
+width: 636px ;
+}
+</style>
+
+
+<style type="text/css">
+body
+{
+	margin: 10px 0 ;
+	padding: 0 ;
+	text-align: center ;
+	font: 0.8em "Trebuchet MS", helvetica, sans-serif ;
+	background: #dea ;
+}
+
+div#conteneur
+{
+	width: 770px ;
+	margin: 0 auto ;
+	text-align: left ;
+	border: 2px solid #ab4 ;
+	background: #fff ;
+}
+
+
+/*banniere*/
+h1#header
+{
+	height: 258px ;
+	margin: 0 ;
+	background: url("https://i.pinimg.com/originals/e1/2e/df/e12edf40d379c1178b90eca44865a213.png") no-repeat left top ;
+}
+
+h1#header a
+{
+	width: 400px ;
+	height: 70px ;
+	display: block ;
+	background: url(title.gif) no-repeat ;
+	position: relative ;
+	left: 350px ;
+	top: 15px ;
+	text-indent: -5000px ;
+}
+
+
+ul#menu
+{
+	height: 35px ;
+	margin: 0 ;
+	padding: 0 ;
+	background: url(bg_menu.gif) repeat-x 0 -25px ;
+	list-style-type: none ;
+}
+		
+ul#menu li
+{
+	float: left ;
+	text-align: center ;
+}
+
+ul#menu li a
+{
+	width: 130px ;
+	line-height: 25px ;
+	font-size: 0.8em ;
+	font-weight: bold ;
+	letter-spacing: 2px ;
+	color: #b30000 ;
+	display: block ;
+	text-decoration: none ;
+	border-right: 2px solid #dea ;
+}
+
+ul#menu li a:hover
+{
+	background: url(bg_menu.gif) repeat-x 0 0 ;
+}
+
+div#contenu
+{
+	padding: 0 25px 0 100px ;
+	background: url(bg_page.gif) no-repeat 15px 15px ;
+}
+
+div#contenu h2
+{
+	padding-left: 25px ;
+	line-height: 25px ;
+	font-size: 1.4em ;
+	background: url(little_apple.gif) no-repeat left bottom ;
+	color: #9b2 ;
+	border-bottom: 1px solid #9b2 ;
+}
+
+div#contenu h3
+{
+	margin-left: 15px ;
+	padding-left: 5px ;
+	border-bottom: 1px solid #9b2 ;
+	border-left: 3px solid #9b2 ;
+	color: #9b2 ;
+}
+
+div#contenu p
+{
+	text-align: justify ;
+	text-indent: 2em ;
+	line-height: 1.7em ;
+}
+
+div#contenu a
+{
+	color: #8a0 ;
+}
+
+div#contenu a:hover
+{
+	color: #9b2 ;
+}
+
+p#footer
+{
+	margin: 0 ;
+	padding-right: 10px ;
+	line-height: 30px ;
+	text-align: right ;
+	color: #8a0 ;
+}
+
+pre
+{
+	overflow: auto ;
+	background: #dea ;
+	border: 2px solid #9b2 ;
+	padding: 5px 0 0 5px ;
+	font-size: 1.2em ;
+}
+
+* html pre
+{
+	width: 636px ;
+}
+
+pre span
+{
+	color: #560 ;
+}
+
+pre span.comment
+{
+	color: #b30000 ;
+}
+
+body
+{
+background-image: url("https://i.pinimg.com/originals/24/98/16/249816f192425b4ab6cc6e9e1d3dd16a.png");
+background-position: center center;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+background-color: #464646;
+}
+
+</style>
+  
   </head>
+  
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light back-light">
-      <a class="navbar-brand" href="/">
-          <img src="https://i.pinimg.com/originals/28/2a/1a/282a1aeeddb6f38ceaafc2124b80757c.png" width="50" height="50" alt=""></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-  
-          <li class="nav-item">
-          <a class="nav-link" href="index.html"><p>ACCUEIL </p></a>
-          </li>
+  <div id="conteneur">    
+    <h1 id="header"><a href="#" title="Colored Design - Accueil"><span>Colored Design</span></a></h1>
 
-          <li class="nav-item">
-            <a class="nav-link" href="telechargements.html"><p>TELECHARGEMENTS</p></a>
-            </li>
-
-          <li class="nav-item">
-          <a class="nav-link" href="regles-du-jeu.html"><p>REGLES DU JEU </p></a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="nouveautes.html"><p>NOUVEAUTES</p></a>
-            </li>
-
-          <li class="nav-item">
-          <a class="nav-link" href="qui-sommes-nous.html"><p>QUI SOMMES-NOUS ? </p></a>
-          </li>
-    
-          
-       </ul>
-      </div>
+    <nav>
+      <ul id="menu">
+        <li><a href="index.html">ACCUEIL</a></li>
+        <li><a href="telechargements.html">TELECHARGEMENTS</a></li>
+        <li><a href="REGLES-DU-JEU.HTML">REGLES DU JEU </a></li>
+        <li><a href="images-du-jeu.html">IMAGES DU JEU</a></li>
+        <li><a href="qui-sommes-nous.html">QUI SOMMES NOUS ?</a></li>
+      </ul>
     </nav>
-  
     
-
+	<div id="contenu">
+		<h2>Titre 1</h2>
+		<p>texte</p>
+		<h2>titre 2 &nbsp;!</h2>
+		<p>texte 2 </p>
+			<h3>sous titre </h3>
+			<p>texte 3 </p>
+			<h3>sous titre  </h3>
+			<p>texte 3 </p>
+			
+		<p><a href="http://www.epita.fr/">Site de l'école</a></p>
+	</div>
     
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <p id="footer">Nathan Antoine Alexandre Mohamed</p>
+  </div>
   </body>
+</html>
 
 
-
+<!--# nom de la page html sur laquelle elle renvoi -->
